@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Pizzas | Cadastro de Cliente</title>
+    <link rel="stylesheet" href="css/cadastro.css"> 
+
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <img src="assets/logo.jpg" alt="Logo da Empresa"> 
+    </header>
+
+    <h2>Cadastro de Cliente</h2>
+
+    <form action="cadastrar_cliente.php" method="POST">
+        <div class="form-group">
+            <label for="nome" class="label-maior">Nome do Cliente <span class="asterisco">*</span>:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="telefone" class="label-menor">Telefone <span class="asterisco">*</span>:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+        </div>
+
+
+        <div class="form-group endereco">
+            <div class="endereco-item">
+                <label for="logradouro" class="label-menor">Logradouro <span class="asterisco">*</span>:</label>
+                <input type="text" id="logradouro" name="logradouro" placeholder="Rua, Avenida..." required>
+            </div>
+            <div class="endereco-item">
+                <label for="numero" class="label-menor">Número da Casa <span class="asterisco">*</span>:</label>
+                <input type="text" id="numero" name="numero" placeholder="Número" required>
+            </div>
+            <div class="endereco-item">
+                <label for="complemento" class="label-menor">Bairro: </label>
+                <input type="text" id="complemento" name="complemento" placeholder="Bairro">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="referencia" class="label-menor">Ponto de Referência:</label>
+            <input type="text" id="referencia" name="referencia" placeholder="Exemplo: Próximo ao mercado">
+        </div>
+
+        <div class="form-group">
+            <a href="#">
+                <button type="button">Cadastrar</button>
+            </a>
+        </div>
+
+        <div class="form-group">
+            <a href="pizza.html">
+                <button type="button">Cadastrar novo sabor</button>
+            </a>
+        </div>
+
+    </form>
+</div>
+
+
+</body>
+</html>
